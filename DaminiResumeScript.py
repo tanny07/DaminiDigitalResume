@@ -3,7 +3,6 @@ import streamlit as st
 from PIL import Image 
 from streamlit_option_menu import option_menu
 from bokeh.models.widgets import Div
-# import streamlit.components.v1 as components
 import webbrowser
 
 
@@ -29,7 +28,7 @@ with col1:
     st.write("Email : daminisharma9704@gmail.com")
 
 with col2:
-    image = Image.open("/Users/tanmaymondkar/Desktop/DaminiResume/Passportsizepic.png")
+    image = Image.open("/Users/tanmaymondkar/Desktop/DaminiDigitalResume/Passportsizepic.png")
     st.image(image, width= 200)
 
 ############################################ Navigation Bar(Angais) ##############################################################
