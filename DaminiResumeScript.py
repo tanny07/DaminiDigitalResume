@@ -44,11 +44,11 @@ def profile():
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
-        if st.button('Github'):
-            js = "window.open('https://github.com/damini29-ps')" 
+        if st.button('Behance'):
+            js = "window.open('https://www.behance.net/daminisharma2905')" 
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
@@ -70,13 +70,6 @@ def profile():
     with col4:
         if st.button('Adress'):
             js = "window.open('https://goo.gl/maps/W9QGsfNSiMxsdRMu7')" 
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-           
-    with col5:
-        if st.button('Behance'):
-            js = "window.open('https://www.behance.net/daminisharma2905')" 
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
