@@ -74,13 +74,6 @@ def profile():
             div = Div(text=html)
             st.bokeh_chart(div)
 
-    with col5:
-        if st.button('Behance'):
-            js = "window.open('https://www.behance.net/daminisharma2905')" 
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
-
     st.markdown('## Summary', unsafe_allow_html=True)
     st.info('''
                 - I am a 22 year old UI UX Designer who enjoy's. 
