@@ -94,7 +94,7 @@ def profile():
             js = "window.open('https://www.linkedin.com/in/daminisharma29')" 
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
-           st.bokeh_chart(div)
+            st.bokeh_chart(div)
  
     with col4:
         if st.button('Adress'):
