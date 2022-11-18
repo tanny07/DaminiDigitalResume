@@ -110,13 +110,11 @@ def Experience():
                 ### Reczee - Effective Matchmaking for Recruitment - Freelance    
                 - My responsibility was to overhaul the entire platform and give the website a more upscale appearance.
                 - I redesigned the website structure including page format, buttons and colour palettes to improve user experience.
-                - Softwares Used : Figma, Adobe illustrator          
+                - Softwares Used : Figma, Adobe illustrator
+                - ###### OPEN PROJECT : [link](https://www.reczee.com/)        
             ''')
-
-    exp_url = 'https://www.reczee.com/'
-
-    if st.button('Open Project'):
-        webbrowser.open_new_tab(exp_url)
+  
+    
 
 ############################################ Projects Function (Angais) ##############################################################
 
@@ -129,12 +127,9 @@ def Projects():
                 - The event maker web application is made for restaurants and clubs and enables users to connect in a contemporary manner thanks to its dark design and distinctive button layout. 
                 - Figma's smart animation is used to create interaction between the dates of matches. This uses excellent typography and colour contrasts.
                 - Implemented technology: Figma, Wireframinig, Prototyping
+                - ###### OPEN PROJECT : [link](https://www.behance.net/gallery/145142613/Event-Maker)
             ''')
 
-    event_maker_app = 'https://www.behance.net/gallery/145142613/Event-Maker'
-        
-    if st.button('Event Maker'):
-        webbrowser.open_new_tab(event_maker_app)
 
     st.markdown('## ', unsafe_allow_html=True)
     st.info('''
@@ -142,12 +137,8 @@ def Projects():
                 - Shaw Academy is an already-existing programme, and in this revamp I've added some new features including more imaginative user interface ideas.
                 - The app's user interface is created with all age groups in mind and offers a welcoming environment.  And there are also some convenient payment options.
                 - Implemented technology: Figma, Wireframinig, Prototyping
+                - ###### OPEN PROJECT : [link](https://www.behance.net/gallery/127960903/App-Clone)               
             ''')
-
-    shaw_academy_app = 'https://www.behance.net/gallery/127960903/App-Clone'
-        
-    if st.button('Shaw Academy'):
-        webbrowser.open_new_tab(shaw_academy_app)
 
 ############################################ Function call(Angais) ##############################################################
 
