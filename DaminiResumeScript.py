@@ -40,7 +40,7 @@ selection = option_menu(None, ["Profile", "Education", "Experience", "Projects"]
 ############################################ Proflie Function (Angais) ##############################################################
 
 def profile():
-    resume_file = "/Users/tanmaymondkar/Desktop/Damini_Resume.pdf"
+    resume_file = "/Users/tanmaymondkar/Desktop/DaminiDigitalResume/Damini_Resume.pdf"
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
