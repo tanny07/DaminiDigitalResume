@@ -73,6 +73,13 @@ def profile():
             html = '<img src onerror="{}">'.format(js)
             div = Div(text=html)
             st.bokeh_chart(div)
+           
+    with col5:
+        if st.button('Behance'):
+            js = "window.open('https://www.behance.net/daminisharma2905')" 
+            html = '<img src onerror="{}">'.format(js)
+            div = Div(text=html)
+            st.bokeh_chart(div)
 
     with col5:
         if st.button('Behance'):
