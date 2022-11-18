@@ -28,7 +28,7 @@ with col1:
     st.write("Email : daminisharma9704@gmail.com")
 
 with col2:
-    image = Image.open("profile.png")
+    image = Image.open("profile.jpg")
     st.image(image, width= 200)
 
 ############################################ Navigation Bar(Angais) ##############################################################
