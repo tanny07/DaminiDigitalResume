@@ -44,35 +44,66 @@ def profile():
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
 
-    with col1:
+    with col1:        
+        github = 'https://github.com/damini29-ps'
+        
         if st.button('Github'):
-            js = "window.open('https://github.com/damini29-ps')" 
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            webbrowser.open_new_tab(github)
 
-    with col2:
+    with col2:       
+        linkedIn = 'https://www.linkedin.com/in/daminisharma29'
+        
+        if st.button('LinkedIn'):
+            webbrowser.open_new_tab(linkedIn)
+
+    with col3:
+        address = 'https://goo.gl/maps/W9QGsfNSiMxsdRMu7'
+        
+        if st.button('Address'):
+            webbrowser.open_new_tab(address)  
+
+    with col4:
+        behance = 'https://www.behance.net/daminisharma2905'
+        
+        if st.button('Behance'):
+            webbrowser.open_new_tab(behance)
+
+    with col5:
             st.download_button(
             label="Resume",
             data=PDFbyte,
             file_name= "DaminiSharmaResume.pdf",
             mime="application/octet-stream",)
+
+#   with col1:
+#       if st.button('Github'):
+#            js = "window.open('https://github.com/damini29-ps')" 
+#            html = '<img src onerror="{}">'.format(js)
+#            div = Div(text=html)
+#            st.bokeh_chart(div)
+#
+#    with col2:
+#            st.download_button(
+#            label="Resume",
+#            data=PDFbyte,
+#            file_name= "DaminiSharmaResume.pdf",
+#            mime="application/octet-stream",)
     
-    with col3:
-        if st.button('LinkedIn'):
-            js = "window.open('https://www.linkedin.com/in/daminisharma29')" 
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+#    with col3:
+#        if st.button('LinkedIn'):
+#            js = "window.open('https://www.linkedin.com/in/daminisharma29')" 
+#            html = '<img src onerror="{}">'.format(js)
+#            div = Div(text=html)
+#           st.bokeh_chart(div)
  
-    with col4:
-        if st.button('Adress'):
-            js = "window.open('https://goo.gl/maps/W9QGsfNSiMxsdRMu7')" 
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+#    with col4:
+#        if st.button('Adress'):
+#            js = "window.open('https://goo.gl/maps/W9QGsfNSiMxsdRMu7')" 
+#            html = '<img src onerror="{}">'.format(js)
+#            div = Div(text=html)
+#            st.bokeh_chart(div)
 
     st.markdown('## Summary', unsafe_allow_html=True)
     st.info('''
