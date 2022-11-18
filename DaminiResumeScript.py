@@ -41,11 +41,6 @@ selection = option_menu(None, ["Profile", "Education", "Experience", "Projects"]
 
 def profile():
 
-    github = 'https://github.com/damini29-ps'
-    linkedIn = 'https://www.linkedin.com/in/daminisharma29'
-    address = 'https://goo.gl/maps/W9QGsfNSiMxsdRMu7'
-    behance = 'https://www.behance.net/daminisharma2905'
-
     resume_file = "/Users/tanmaymondkar/Desktop/DaminiDigitalResume/Damini_Resume.pdf"
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
@@ -54,25 +49,32 @@ def profile():
 
     with st.sidebar:
 
-        st.markdown('## Links', unsafe_allow_html=True)
+        st.markdown('# Links', unsafe_allow_html=True)  
 
-        if st.button('Github'):
-            webbrowser.open_new_tab(github)
+        st.write(" Github : [link](https://github.com/damini29-ps)")
+        st.write(" LinkedIn : [link](https://www.linkedin.com/in/daminisharma29)")
+        st.write(" Address : [link](https://goo.gl/maps/W9QGsfNSiMxsdRMu7)")
+        st.write(" Behance : [link](https://www.behance.net/daminisharma2905)")
+
+
+
+#        if st.button('Github'):
+#            webbrowser.open_new_tab(github)
 
         st.download_button(
-        label="Resume",
+        label="Download Resume",
         data=PDFbyte,
         file_name= "DaminiSharmaResume.pdf",
         mime="application/octet-stream",)
        
-        if st.button('Address'):
-            webbrowser.open_new_tab(address) 
+#        if st.button('Address'):
+#            webbrowser.open_new_tab(address) 
 
-        if st.button('LinkedIn'):
-            webbrowser.open_new_tab(linkedIn)
+#        if st.button('LinkedIn'):
+#            webbrowser.open_new_tab(linkedIn)
       
-        if st.button('Behance'):
-            webbrowser.open_new_tab(behance)
+#        if st.button('Behance'):
+#            webbrowser.open_new_tab(behance)
 
 
 
