@@ -2,7 +2,6 @@
 import streamlit as st
 from PIL import Image 
 from streamlit_option_menu import option_menu
-from bokeh.models.widgets import Div
 import webbrowser
 
 
@@ -45,8 +44,6 @@ def profile():
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
-#    col1, col2, col3, col4, = st.columns(4)
-
     with st.sidebar:
 
         st.markdown('# Links', unsafe_allow_html=True)  
@@ -56,63 +53,12 @@ def profile():
         st.write(" Address : [link](https://goo.gl/maps/W9QGsfNSiMxsdRMu7)")
         st.write(" Behance : [link](https://www.behance.net/daminisharma2905)")
 
-
-
-#        if st.button('Github'):
-#            webbrowser.open_new_tab(github)
-
         st.download_button(
         label="Download Resume",
         data=PDFbyte,
         file_name= "DaminiSharmaResume.pdf",
         mime="application/octet-stream",)
        
-#        if st.button('Address'):
-#            webbrowser.open_new_tab(address) 
-
-#        if st.button('LinkedIn'):
-#            webbrowser.open_new_tab(linkedIn)
-      
-#        if st.button('Behance'):
-#            webbrowser.open_new_tab(behance)
-
-
-
-#    with col2:
-#            st.download_button(
-#            label="Resume",
-#           data=PDFbyte,
-#            file_name= "DaminiSharmaResume.pdf",
-#            mime="application/octet-stream",)
-
-#    with col1:
-#       if st.button('Github'):
-#            js = "window.open('https://github.com/damini29-ps')" 
-#            html = '<img src onerror="{}">'.format(js)
-#            div = Div(text=html)
-#            st.bokeh_chart(div)
-
-#    with col2:
-#            st.download_button(
-#            label="Resume",
-#            data=PDFbyte,
-#            file_name= "DaminiSharmaResume.pdf",
-#            mime="application/octet-stream",)
-    
-#    with col3:
-#        if st.button('LinkedIn'):
-#            js = "window.open('https://www.linkedin.com/in/daminisharma29')" 
-#            html = '<img src onerror="{}">'.format(js)
-#            div = Div(text=html)
-#            st.bokeh_chart(div)
- 
-#    with col4:
-#       if st.button('Adress'):
-#            js = "window.open('https://goo.gl/maps/W9QGsfNSiMxsdRMu7')" 
-#            html = '<img src onerror="{}">'.format(js)
-#            div = Div(text=html)
-#            st.bokeh_chart(div)
-
     st.markdown('## Summary', unsafe_allow_html=True)
     st.info('''
                 - I am a 22 year old UI UX Designer who enjoy's. 
