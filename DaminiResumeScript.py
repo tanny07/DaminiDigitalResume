@@ -40,33 +40,31 @@ selection = option_menu(None, ["Profile", "Education", "Experience", "Projects"]
 ############################################ Proflie Function (Angais) ##############################################################
 
 def profile():
+
+    github = 'https://github.com/damini29-ps'
+    linkedIn = 'https://www.linkedin.com/in/daminisharma29'
+    address = 'https://goo.gl/maps/W9QGsfNSiMxsdRMu7'
+    behance = 'https://www.behance.net/daminisharma2905'
+
     resume_file = "/Users/tanmaymondkar/Desktop/DaminiDigitalResume/Damini_Resume.pdf"
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
-    with col1:        
-        github = 'https://github.com/damini29-ps'
-        
+    with col1:
         if st.button('Github'):
             webbrowser.open_new_tab(github)
 
-    with col2:       
-        linkedIn = 'https://www.linkedin.com/in/daminisharma29'
-        
+    with col2:              
         if st.button('LinkedIn'):
             webbrowser.open_new_tab(linkedIn)
 
-    with col3:
-        address = 'https://goo.gl/maps/W9QGsfNSiMxsdRMu7'
-        
+    with col3:        
         if st.button('Address'):
             webbrowser.open_new_tab(address)  
 
-    with col4:
-        behance = 'https://www.behance.net/daminisharma2905'
-        
+    with col4:       
         if st.button('Behance'):
             webbrowser.open_new_tab(behance)
 
