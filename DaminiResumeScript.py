@@ -44,7 +44,7 @@ def profile():
     with open("Damini_Resume.pdf", "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         if st.button('Github'):
