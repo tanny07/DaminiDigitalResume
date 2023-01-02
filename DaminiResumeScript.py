@@ -7,6 +7,15 @@ import webbrowser
 
 ############################################ General Settings ####################################################################
 
+# PAGE LAYOUT
+
+st.set_page_config(
+    page_title = "Digital Resume", 
+    layout="wide",
+    page_icon="✨"
+) 
+st.title(" Digital Resume ")
+
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
